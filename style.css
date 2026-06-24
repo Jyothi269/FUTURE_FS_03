@@ -1,0 +1,323 @@
+**{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8f4ef;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#4a2c2a;
+color:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#d4af37;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+#darkModeBtn{
+background:#d4af37;
+border:none;
+padding:8px 12px;
+cursor:pointer;
+border-radius:5px;
+font-size:18px;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)
+),
+url('https://images.unsplash.com/photo-1509440159596-0249088772ff');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#d4af37;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.stats{
+display:flex;
+justify-content:space-around;
+background:#4a2c2a;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+.stats h2{
+font-size:40px;
+color:#d4af37;
+}
+
+section{
+padding:70px 40px;
+}
+
+section h2{
+text-align:center;
+margin-bottom:30px;
+font-size:35px;
+color:#4a2c2a;
+}
+
+#about p{
+max-width:800px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#4a2c2a;
+margin-bottom:10px;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:320px;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.faq-item{
+max-width:800px;
+margin:15px auto;
+}
+
+.faq-btn{
+width:100%;
+padding:15px;
+background:#4a2c2a;
+color:white;
+border:none;
+cursor:pointer;
+font-size:18px;
+text-align:left;
+}
+
+.faq-answer{
+display:none;
+background:#f2f2f2;
+padding:15px;
+}
+
+#contact{
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:30px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:12px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+form button{
+background:#d4af37;
+border:none;
+padding:12px;
+font-size:18px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+footer{
+background:#4a2c2a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+footer h3{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.dark-mode{
+background:#121212;
+color:white;
+}
+
+.dark-mode .card{
+background:#1e1e1e;
+color:white;
+}
+
+.dark-mode section h2{
+color:#d4af37;
+}
+
+.dark-mode .faq-answer{
+background:#2c2c2c;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+}
